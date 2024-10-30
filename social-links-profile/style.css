@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  background:black ;
+  margin: 0;
+}
+
+.card{
+  background:hsl(0, 0%, 8%) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 530px;
+  width: 350px;
+  margin: 100px;
+ border-radius: 12px;
+ padding: 20px;
+
+}
+
+.card img{
+width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ margin-top: 25px;
+ 
+}
+
+.card h3{
+  color: hsl(0, 0%, 100%);
+   margin-bottom: 10px;
+}
+
+.location{
+  color:rgb(194, 194, 11) ;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.description{
+  color:whitesmoke;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
+  gap: 12px;
+}
+
+.social-links a{
+  color: whitesmoke;
+  background: hsl(0, 0%, 20%) ;
+  padding: 10px 95px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 10px;
+  transform: scale(1.5s);
+}
+
+.social-links a:hover{
+  transition: all 0.5s;
+  background-color:hsl(0, 0%, 12%) ;
+  color:rgb(194, 194, 11) ;
+}
+
+
+@media (max-width: 375px){
+  .card{
+    padding: 15px;
+    width: 90%;
+  }
+
+  .card img{
+    width: 80px;
+    height: 80px;
+  }
+  
+   .social-links a{
+    padding: 8px 75px;
+   }
+}
