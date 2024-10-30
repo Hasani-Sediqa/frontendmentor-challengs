@@ -16,10 +16,9 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 Thess types  of projects are imasing for learning. If i just keep watching the tutorials, i'll forgete all things that I watched and still don't understant how to use it in the real projects.  This type of projects helps me learn better and is mor understable  for beginners.
 
 
-### Links
+### Link
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://hasani-sediqa.github.io/frontendmentor-challengs/blog-preview-card-challenge/index.html)
 
 
 ### Built with
