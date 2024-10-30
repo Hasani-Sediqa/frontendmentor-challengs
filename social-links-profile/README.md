@@ -9,9 +9,9 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL:(https://github.com/Hasani-Sediqa/frontendmentor-challengs/tree/main/social-links-profile)
-
+- Solution URL:(https://github.com/Hasani-Sediqa/frontendmentor-challengs/tree/main/social-links-profile).
+- Live Site URL:(https://hasani-sediqa.github.io/frontendmentor-challengs/social-links-profile/index.html).
+                 
 
 ### Built with
 
