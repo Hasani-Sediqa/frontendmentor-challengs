@@ -26,7 +26,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Outfit", sans-serif;
   font-size: 12px;
   background-color: var(--stone-100) ;
@@ -37,7 +37,7 @@ body{
   border-radius: 15px;
   padding: 25px;
   background-color: var(--white);
-  width: 550px;
+  width: 565px;
   line-height: 1.5;
   margin: 8rem;
   justify-content: center;
