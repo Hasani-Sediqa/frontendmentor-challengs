@@ -88,7 +88,7 @@ picture img{
   border: none;
   margin-top:1rem ;
   border-radius: 5px;
-  padding: 10px 98px ;
+  padding: 10px 60px ;
 }
 .content button i{
   margin-right: 10px;
@@ -99,7 +99,7 @@ picture img{
 
 /*Responsive design*/
 
-@media (min-width:1440px) {
+@media screen and (min-width: 600px){
 
    .card { 
    display: flex;
