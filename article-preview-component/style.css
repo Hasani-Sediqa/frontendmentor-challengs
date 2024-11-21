@@ -56,12 +56,6 @@ body{
   justify-content: center;
 }
 
-.main{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
 .container{
   display: flex;
   flex-direction: column;
@@ -69,12 +63,13 @@ body{
   width: 87%;
   max-width: 25rem;
   border-radius: 1rem;
-
+  margin-inline: auto;
 }
 
 .drawers-image img{
   height:100%;
   object-fit:cover;
+  object-position: left;
   max-width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
