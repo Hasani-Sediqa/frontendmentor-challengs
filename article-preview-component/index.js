@@ -22,7 +22,7 @@ window.addEventListener('resize', () => {
   const w = window.innerWidth; if (w > 1039) { 
     profileSection.classList.remove('hidden'); 
     socialLinks.classList.add('hidden'); 
-    toggleButton1.classList.remove('hidden'); 
+    toggleButton2.classList.remove('hidden'); 
   } 
 }); 
 // Initial check 
