@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+:root{
+  /*Colors*/
+
+/*Primary*/
+--tomato: hsl(4, 100%, 67%);
+
+/* Neutral*/
+--dark-slate-grey: hsl(234, 29%, 20%);
+--charcoal-grey: hsl(235, 18%, 26%);
+--grey: hsl(231, 7%, 60%);
+--white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--dark-slate-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main{
+  max-width: 23.4rem;
+  background-color: var(--white);
+}
+
+.content{
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+.title{
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 1.5rem auto 1.5rem 0.5rem;
+}
+
+.sub-title{
+  margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.list{
+  list-style: none;
+}
+
+.list-text{
+  margin: 0.8rem ;
+  line-height: 1.5;
+  padding-left: 30px;
+  position: relative;
+}
+
+.list-text::before{
+  content: "";
+  background-image: url(images/icon-list.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  left: 0;
+}
+
+.email-section{
+  display: flex;
+  flex-direction: column;
+  gap:0.3rem;
+  margin: 1.6rem 1rem 1rem 1rem ;
+}
+
+#email{
+  padding: 1rem  ;
+  border-radius:0.3rem ;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+  outline: none;
+}
+
+#email::placeholder{
+  color: var(--grey);
+
+}
+
+.email-required{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hidden{
+  display: none;
+}
+
+.subscribe-btn{
+  padding: 1rem  ;
+  border-radius:0.3rem ;
+  background-color: var(--charcoal-grey);
+  color: #ffff;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.subscribe-btn:hover{
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(4, 93%, 47%) , hsl(4, 100%, 67%));
+  box-shadow: 0 4px 8px -1px rgba(255, 0, 0, 0.5);
+}
+
+/*Success design*/
+
+.success-message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 3rem 2rem 2rem 1.5rem ;
+}
+
+.success-message img{
+  align-self: flex-start;
+  margin-top: auto;
+}
+.success-title{
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.success-txt{
+  margin-top: 1rem;
+}
+
+.success-txt a{
+  text-decoration: none;
+  color: var(--dark-slate-grey);
+  font-weight: 600;
+}
+
+.success-btn{
+  background-color: var(--dark-slate-grey);
+  color: #ffff;
+  margin-top: auto;
+  padding: 1rem ;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey);
+}
+
+.success-btn:hover{
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(4, 93%, 47%) , hsl(4, 100%, 67%));
+  box-shadow: 0 4px 8px -1px rgba(255, 0, 0, 0.5);
+}
+
+.message-hidden{
+  display: none;
+}
+
+/*Desktop design*/
+
+    @media screen and (min-width:1024px) and (max-width: 1440px) {
+      body {
+        background-color: var(--dark-slate-grey);
+      }
+    
+      .main { 
+        max-width: 54.5rem;
+        max-height: 41rem;
+        border-radius: 1.6rem;
+      }
+
+      #form{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+    
+      .desktop-img{
+        object-fit: cover;
+      }
+      .content{
+         margin-top: 3rem;
+      }
+
+      .title{
+        font-size: 2.8rem;
+      }
+
+      .email-section{
+        margin-top: 3rem;
+      }
+
+      .hidden{
+         font-weight: 600;
+         font-size: 12px;
+      }
+
+      .success-message{
+            display: flex;
+            justify-self: center;
+            max-height:27rem;
+            max-width: 27rem;
+            border-radius: 1.6rem;
+            background-color: var(--white);
+            padding: 2rem;
+      }
+
+      .success-message  img{
+        margin-top: 0;
+      }
+      .success-title{
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-left: 0;
+      }
+
+      .message-hidden{
+        display: none;
+      }
+   
+    }
+    
+
+
+
+
+
